@@ -1,10 +1,73 @@
-.hourly-section {
-  position: absolute;
-  right: 50px;
-  top: 0;
+@mixin buttons {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
 }
+//
+// .hourly-section {
+//   width: 50%;
+//   float: right;
+// }
 
 .hourly-weather {
-  border: 2px solid black;
-  padding: 20px 100px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.input-field-container {
+  text-align: center;
+}
+
+button {
+  @include buttons;
+}
+
+button:hover {
+  background-color: lightgrey;
+}
+
+li {
+  margin: 30px;
+}
+
+p, h3 {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 70pt;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+input {
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.high-temp {
+  color: red;
+}
+
+.low-temp {
+  color: blue;
+}
+
+.date {
+  font-weight: 600;
+}
+
+.hourly-section-title {
+  font-size: 20pt;
 }
