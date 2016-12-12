@@ -8,9 +8,20 @@
   outline: none;
 }
 
-.hourly-weather {
+@mixin twentyFourHourDisplay {
+  font-size: 28px;
+  font-weight: bold;
+  width: 45%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 65px;
   border: 1px solid black;
+  border-radius: 10px;
   margin: 10px;
+}
+
+body {
+  background-color: #FAF0E6;
 }
 
 .input-field-container {
@@ -44,6 +55,8 @@ input {
   height: 50px;
   border-radius: 10px;
   outline: none;
+  margin-right: 10px;
+  font-size: 10pt;
 }
 
 ul {
@@ -70,4 +83,47 @@ ul {
 .vomit-cloud {
   display: block;
   margin: auto;
+}
+
+.twenty-four-hour-weather{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sunny {
+  background-color: yellow;
+  background-image: url("/images/sunny.png");
+  @include twentyFourHourDisplay;
+}
+
+.cloudy {
+  background-color: lightgrey;
+  background-image: url("/images/cloudy.png");
+  @include twentyFourHourDisplay;
+}
+
+.rain {
+  background-color: lightblue;
+  background-image: url("/images/rainy.png");
+
+  @include twentyFourHourDisplay;
+}
+
+.windy {
+  background-color: aqua;
+  background-image: url("/images/windy.png");
+  @include twentyFourHourDisplay;
+}
+
+.foggy {
+  background-color: darkgrey;
+  background-image: url("/images/foggy.png");
+  @include twentyFourHourDisplay;
+}
+
+.storms {
+  background-color: red;
+  background-image: url("/images/thunderstormy.png");
+  @include twentyFourHourDisplay;
 }
