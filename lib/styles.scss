@@ -49,6 +49,10 @@ input {
 ul {
   display: flex;
   flex-direction: row;
+  border-radius: 10px;
+}
+h4 {
+  margin-left: 15px;
 }
 
 .high-temp {
