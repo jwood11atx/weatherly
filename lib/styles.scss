@@ -127,3 +127,9 @@ ul {
   background-image: url("/images/thunderstormy.png");
   @include twentyFourHourDisplay;
 }
+
+.snow {
+  background-color: white;
+  background-image: url("/images/snowy.png");
+  @include twentyFourHourDisplay;
+}
