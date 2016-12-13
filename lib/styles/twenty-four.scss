@@ -1,0 +1,44 @@
+@import 'variables';
+
+.sunny {
+  background-color: $sunny;
+  background-image: url("/images/sunny.png");
+  @include twentyFourHourDisplay;
+}
+
+.cloudy {
+  background-color: $cloudy;
+  background-image: url("/images/cloudy.png");
+  @include twentyFourHourDisplay;
+}
+
+.rain {
+  background-color: $rain;
+  background-image: url("/images/rainy.png");
+
+  @include twentyFourHourDisplay;
+}
+
+.windy {
+  background-color: $windy;
+  background-image: url("/images/windy.png");
+  @include twentyFourHourDisplay;
+}
+
+.foggy {
+  background-color: $foggy;
+  background-image: url("/images/foggy.png");
+  @include twentyFourHourDisplay;
+}
+
+.storms {
+  background-color: $storms;
+  background-image: url("/images/thunderstormy.png");
+  @include twentyFourHourDisplay;
+}
+
+.snow {
+  background-color: $snow;
+  background-image: url("/images/snowy.png");
+  @include twentyFourHourDisplay;
+}
