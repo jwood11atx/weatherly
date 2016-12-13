@@ -1,0 +1,34 @@
+$sunny: yellow;
+$cloudy: lightgrey;
+$rain: lightblue;
+$windy: aqua;
+$foggy: darkgrey;
+$storms: red;
+$snow: white;
+$highTemp: red;
+$lowTemp: blue;
+$chance: green;
+$notQuiteWhite: #FAF0E6;
+$centerAlign: center;
+
+@mixin buttons {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+}
+
+@mixin twentyFourHourDisplay {
+  font-size: 28px;
+  font-weight: bold;
+  width: 45%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 65px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
