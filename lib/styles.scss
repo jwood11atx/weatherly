@@ -72,6 +72,10 @@ ul {
   color: blue;
 }
 
+.chance {
+  color: green;
+}
+
 .date {
   font-weight: 600;
 }
@@ -125,5 +129,11 @@ ul {
 .storms {
   background-color: red;
   background-image: url("/images/thunderstormy.png");
+  @include twentyFourHourDisplay;
+}
+
+.snow {
+  background-color: white;
+  background-image: url("/images/snowy.png");
   @include twentyFourHourDisplay;
 }
