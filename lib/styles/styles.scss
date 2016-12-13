@@ -24,7 +24,7 @@ p, h3 {
 h1 {
   font-size: 70pt;
   margin-bottom: 50px;
-  text-align: center;
+  text-align: $centerAlign;
 }
 
 input {
@@ -42,7 +42,7 @@ ul {
 }
 
 .input-field-container {
-  text-align: center;
+  text-align: $centerAlign;
 }
 
 .high-temp {
